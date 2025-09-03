@@ -1,12 +1,60 @@
-# React + Vite
+# 🌎 Earthquake Visualizer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web application that displays real-time earthquake data from the [USGS API](https://earthquake.usgs.gov/) using an interactive map powered by [Leaflet.js](https://leafletjs.com/).
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+- **Live Earthquake Map** → View global earthquake activity from the last 24 hours.
+- **Color-Coded Magnitude** → Circles range from yellow (minor) to red (strong).
+- **Search by Location** → Focus on specific countries or regions.
+- **Real-Time Stats** → Total earthquakes, significant (M4+), and highest magnitude.
+- **Refresh Button** → Get the latest data instantly.
+- **Responsive Design** → Works on desktop, tablet, and mobile.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Tech Stack
+- **Frontend**: HTML, CSS, JavaScript (or React if applicable)
+- **Mapping Library**: Leaflet.js
+- **API**: USGS Earthquake GeoJSON Feed
+- **Deployment**: Vercel / Netlify
+
+---
+
+## 📂 File Structure
+```plaintext
+earthquake-visualizer/
+├─ index.html
+├─ package.json
+├─ postcss.config.js
+├─ tailwind.config.js
+├─ vite.config.js
+└─ src/
+   ├─ main.jsx
+   ├─ App.jsx
+   ├─ index.css
+   ├─ components/
+   │  ├─ MapView.jsx
+   │  └─ Legend.jsx
+   ├─ hooks/
+   │  └─ useEarthquakes.js
+   └─ lib/
+      ├─ constants.js
+      └─ utils.js
+```
+## Setup Locally
+```bash
+git clone https://github.com/<your-username>/earthquake-visualizer.git
+cd earthquake-visualizer
+npm install
+npm run dev
+```
+---
+## 🙌 Credits
+
+* Built for the **Web Developer position at Aganitha.**
+* By: Salendra Harilaxman
+* Date: **9th September 2025**
+
+---
