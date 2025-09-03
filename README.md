@@ -45,7 +45,7 @@ earthquake-visualizer/
 ```
 ## Setup Locally
 ```bash
-git clone https://github.com/<your-username>/earthquake-visualizer.git
+git clone https://github.com/Harilaxman27/earthquake-visualizer.git
 cd earthquake-visualizer
 npm install
 npm run dev
